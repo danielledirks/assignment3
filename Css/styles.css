@@ -1,3 +1,12 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container__nav {
+    justify-content: flex-end;
+    align-items: baseline;
+}
 .nav-padding {
     padding-right: 8px;
 }
@@ -14,6 +23,7 @@
     text-align: left;
     font-size: 32px;
     font-family: serif;
+    text-decoration-style: none;
 }
 
 #bio {
@@ -36,10 +46,30 @@
     font-family: baskerville;
 }
 
-#signature {
+p #signature {
     font-family: cursive;
 }
 
-p #signature {
-    font-family: cursive;
+header nav ul {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   text-decoration-style: none;
+}
+
+header nav li {
+    align-items: flex-end;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 1em;
+    list-style-type: none;
+    text-decoration-style: none;
+    align-items: center;
+}
+
+@media screen and (max-width; 40rem) {
+    .container,
+    header,
+    main,
+    footer {flex-direction: column}
 }
